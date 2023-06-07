@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress DeprecatedClassUsageInspection -->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layoutDirection="ltr"
+    android:background="#BD6E6E">
+
+    <CheckBoxPreference
+        app:key="checkBox"
+        app:title="Send SMS?"
+
+        android:summary="Checked"
+        android:background="#C88888"/>
+
+    <CheckBoxPreference
+        app:key="save_order"
+        app:title="Save Order?"
+
+        android:summary="Checked"
+        android:background="#C88888"/>
+
+</PreferenceScreen>

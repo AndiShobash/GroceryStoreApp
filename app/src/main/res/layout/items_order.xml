@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layoutDirection="ltr"
+    app:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeid_order"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_margin="4dp"
+        android:background="#C0CCD6">
+
+        <TextView
+            android:id="@+id/text_view_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderSummary"
+            android:layout_marginLeft="10dp"
+            android:text="Full Name"
+            android:textStyle="bold"
+            tools:ignore="UnknownId" />
+
+        <TextView
+            android:id="@+id/text_view_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/text_view_type"
+            android:layout_toEndOf="@id/type_name"
+            android:layout_marginLeft="20dp"
+            android:text="Date:"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/type_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/text_view_date"
+            android:layout_marginLeft="10dp"
+            android:text="x"
+            android:textStyle="bold" />
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/quantityinOrderSummary"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_toRightOf="@+id/text_view_name"-->
+<!--            android:text="x"-->
+<!--            android:textStyle="bold" />-->
+
+        <TextView
+            android:id="@+id/text_view_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_name"
+            android:layout_marginLeft="10dp"
+            android:text="Type:"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/type_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_name"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/text_view_type"
+            android:text="x"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_view_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_name"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/type_name"
+            android:text="Quantity:"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/type_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_name"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/text_view_quantity"
+            android:text="x"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_view_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_name"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/type_quantity"
+            android:text="Price:   "
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/priceinOrderSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_name"
+            android:layout_toRightOf="@+id/text_view_price"
+            android:layout_marginRight="10dp"
+            android:text="₪10" />
+
+        <ImageButton
+            android:id="@+id/image_delete"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:padding="2dp"
+            android:background="#C0CCD6"
+            android:src="@drawable/ic_baseline_delete_24" />
+
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/text_view_name"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignParentTop="true"-->
+        <!--            android:layout_marginTop="30dp"-->
+        <!--            android:text="Line 1"-->
+        <!--            android:textColor="@android:color/black"-->
+        <!--            android:textSize="20sp"-->
+        <!--            android:textStyle="bold" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/text_view_name_under"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignTop="@+id/text_view_name"-->
+        <!--            android:layout_alignParentTop="true"-->
+        <!--            android:text="Line 2"-->
+        <!--            android:textSize="15sp" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/text_view_last_name"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignParentTop="true"-->
+        <!--            android:layout_marginStart="13dp"-->
+        <!--            android:layout_marginTop="30dp"-->
+        <!--            android:layout_toEndOf="@+id/text_view_name"-->
+        <!--            android:text="Line 1"-->
+        <!--            android:textColor="@android:color/black"-->
+        <!--            android:textSize="20sp"-->
+        <!--            android:textStyle="bold" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/text_view_last_name_under"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@+id/text_view_name"-->
+        <!--            android:layout_alignTop="@+id/text_view_last_name"-->
+        <!--            android:layout_alignParentTop="true"-->
+        <!--            android:layout_marginStart="33dp"-->
+        <!--            android:layout_marginTop="3dp"-->
+        <!--            android:layout_toEndOf="@+id/text_view_name_under"-->
+        <!--            android:text="Line 2"-->
+        <!--            android:textSize="15sp" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/text_view_type"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignParentTop="true"-->
+        <!--            android:layout_marginStart="88dp"-->
+        <!--            android:layout_marginTop="30dp"-->
+        <!--            android:layout_toEndOf="@+id/text_view_name"-->
+        <!--            android:text="Line 1"-->
+        <!--            android:textColor="@android:color/black"-->
+        <!--            android:textSize="20sp"-->
+        <!--            android:textStyle="bold" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/text_view_under_type"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignTop="@+id/text_view_type"-->
+        <!--            android:layout_marginStart="24dp"-->
+        <!--            android:layout_marginTop="-26dp"-->
+        <!--            android:layout_toEndOf="@+id/text_view_last_name"-->
+        <!--            android:text="Line 2"-->
+        <!--            android:textSize="15sp" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/text_view_quantity"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignParentTop="true"-->
+        <!--            android:layout_marginStart="167dp"-->
+        <!--            android:layout_marginTop="29dp"-->
+        <!--            android:layout_toEndOf="@+id/text_view_name"-->
+        <!--            android:text="Line 1"-->
+        <!--            android:textColor="@android:color/black"-->
+        <!--            android:textSize="20sp"-->
+        <!--            android:textStyle="bold" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/text_view_under_quantity"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignTop="@+id/text_view_quantity"-->
+        <!--            android:layout_marginStart="107dp"-->
+        <!--            android:layout_marginTop="-27dp"-->
+        <!--            android:layout_toEndOf="@+id/text_view_last_name"-->
+        <!--            android:text="Line 2"-->
+        <!--            android:textSize="15sp" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/text_view_total"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignParentTop="true"-->
+        <!--            android:layout_marginStart="242dp"-->
+        <!--            android:layout_marginTop="29dp"-->
+        <!--            android:layout_toEndOf="@+id/text_view_name"-->
+        <!--            android:text="Line 1"-->
+        <!--            android:textColor="@android:color/black"-->
+        <!--            android:textSize="20sp"-->
+        <!--            android:textStyle="bold" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/text_view_under_total"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignTop="@+id/text_view_type"-->
+        <!--            android:layout_marginStart="181dp"-->
+        <!--            android:layout_marginTop="-28dp"-->
+        <!--            android:layout_toEndOf="@+id/text_view_last_name"-->
+        <!--            android:text="Line 2"-->
+        <!--            android:textSize="15sp" />-->
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
